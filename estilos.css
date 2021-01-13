@@ -394,3 +394,13 @@ tr td{
 	align-content: center;
 	justify-items: center;
 }
+
+@media (max-width: 991px) {
+	.turnera-pc{
+		display: none;
+		} 
+	}
+	.showcase-title{
+		margin-bottom: 2vh;
+	}
+}

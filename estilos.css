@@ -8,6 +8,7 @@ body{
 	padding: 0px; 
 	color: black;
 	font-family: 'Montserrat', sans-serif;
+	width: 100vw !important;
 }
 
 @media (max-width: 991px) {
@@ -403,4 +404,10 @@ tr td{
 	.showcase-title{
 		margin-bottom: 2vh;
 	}
+}
+
+
+
+.test{
+	width: 375px;
 }

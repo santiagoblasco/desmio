@@ -8,7 +8,6 @@ body{
 	padding: 0px; 
 	color: black;
 	font-family: 'Montserrat', sans-serif;
-	width: 100vw !important;
 }
 
 @media (max-width: 991px) {
@@ -396,6 +395,11 @@ tr td{
 	justify-items: center;
 }
 
+.terminos{
+	font-size: smaller;
+	align-self: center;
+}
+
 @media (max-width: 991px) {
 	.turnera-pc{
 		display: none;
@@ -404,10 +408,4 @@ tr td{
 	.showcase-title{
 		margin-bottom: 2vh;
 	}
-}
-
-
-
-.test{
-	width: 375px;
 }

@@ -62,13 +62,13 @@
 	<section>
 		<h2>Crear cuenta</h2>
 		<div class="d-flex justify-content-center">
-			<div class="form-box col-4 d-flex justify-content-center">
-				<form class="d-grid col-8 my-3">
-					<input type="text" name="nombre" placeholder="Nombre" class="form-item">
-					<input type="tel" name="celular" placeholder="Celular" class="form-item">
-					<input type="email" name="correo-electronico" placeholder="Correo electrónico" class="form-item">
-					<input type="password" name="contraseña" placeholder="Contraseña" class="form-item">
-					<select name="rubro-comercial" id="rubro-comercial" class="form-item">
+			<div class="form-box col-10 col-sm-6 col-lg-3 mt-3">
+				<form class="my-3 d-grid justify-content-center">
+                    <input type="text" name="nombre" placeholder="Nombre" class="form-item col-10">
+					<input type="tel" name="celular" placeholder="Celular" class="form-item col-10">
+					<input type="email" name="correo-electronico" placeholder="Correo electrónico" class="form-item col-10">
+					<input type="password" name="contraseña" placeholder="Contraseña" class="form-item col-10">
+					<select name="rubro-comercial" id="rubro-comercial" class="form-item col-10">
 						<option hidden disabled selected>Rubro comercial</option>
 						<option value="peluquerias">Peluquerías</option>
 						<option value="estética-y-cuidado-personal">Estética y cuidado personal</option>
@@ -78,12 +78,12 @@
 						<option value="servicios-legales">Servicios legales</option>
 						<option value="consultoria">Consultoría</option>
 						<option value="otros">Otros</option>
-					</select>
-					<div class="my-3">
+                    </select>
+					<div class="my-3 d-flex align-content-center">
 						<input type="checkbox" name="terminos-y-condiciones" class="form-item">
-						<label for="terminos-y-condiciones">Acepto los términos y condiciones</label>
+						<label for="terminos-y-condiciones" class="terminos mx-2">Acepto los términos y condiciones</label>
 					</div>
-					<input type="submit" name="registrarme" value="Registrarme" class="form-button mb-2">
+					<input type="submit" name="registrarme" value="Registrarme" class="form-button mb-2 justify-self-center">
 				</form>
 			</div>
 		</div>

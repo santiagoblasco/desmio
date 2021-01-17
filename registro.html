@@ -59,37 +59,35 @@
             </div>
         </nav>
     </header>
-	<section>
-		<h2>Crear cuenta</h2>
-		<div class="d-flex justify-content-center">
-			<div class="form-box col-10 col-sm-6 col-lg-3 mt-3">
-				<form class="my-3 d-grid justify-content-center">
-                    <input type="text" name="nombre" placeholder="Nombre" class="form-item col-10">
-					<input type="tel" name="celular" placeholder="Celular" class="form-item col-10">
-					<input type="email" name="correo-electronico" placeholder="Correo electrónico" class="form-item col-10">
-					<input type="password" name="contraseña" placeholder="Contraseña" class="form-item col-10">
-					<select name="rubro-comercial" id="rubro-comercial" class="form-item col-10">
-						<option hidden disabled selected>Rubro comercial</option>
-						<option value="peluquerias">Peluquerías</option>
-						<option value="estética-y-cuidado-personal">Estética y cuidado personal</option>
-						<option value="medicina-y-salud">Medicina y salud</option>
-						<option value="mecanica">Mecánica</option>
-						<option value="educacion">Educación</option>
-						<option value="servicios-legales">Servicios legales</option>
-						<option value="consultoria">Consultoría</option>
-						<option value="otros">Otros</option>
-                    </select>
-					<div class="my-3 d-flex align-content-center">
-						<input type="checkbox" name="terminos-y-condiciones" class="form-item">
-						<label for="terminos-y-condiciones" class="terminos mx-2">Acepto los términos y condiciones</label>
-					</div>
-					<input type="submit" name="registrarme" value="Registrarme" class="form-button mb-2 justify-self-center">
-				</form>
-			</div>
-		</div>
+	<section>        
+        <div class="form-signin form-box p-4 mt-5">
+            <form>
+                <img class="mb-4" src="./multimedia/logo-turnera-azul.png" alt="logo-turnera">
+                <h2 class="h3 mb-3 fw-normal">Crear cuenta</h2>
+                <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus>
+                <input type="tel" id="inputPhone" class="form-control" placeholder="Celular" autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+                <input type="password" id="inputPassword" class="form-control mb-0" placeholder="Contraseña" required>
+                <select name="rubro-comercial" id="rubro-comercial" class="form-control mb-3">
+                    <option hidden disabled selected>Rubro comercial</option>
+                    <option value="peluquerias">Peluquerías</option>
+                    <option value="estética-y-cuidado-personal">Estética y cuidado personal</option>
+                    <option value="medicina-y-salud">Medicina y salud</option>
+                    <option value="mecanica">Mecánica</option>
+                    <option value="educacion">Educación</option>
+                    <option value="servicios-legales">Servicios legales</option>
+                    <option value="consultoria">Consultoría</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <div>
+                    <label class="form-label ms-1"><input type="checkbox" value="form-label" class="me-2">Acepto los términos y condiciones</label>
+                </div>
+                <button class="w-100 btn btn-lg form-button my-2" type="submit">Registrarme</button>
+              </form>
+        </div>
 	</section>
     <footer class="footer mt-5">
-        <div class="row align-items-center pt-3">
+        <div class="row align-items-center mx-0 pt-3">
             <div class="col-6 col-lg-3 mx-auto">
                 <img src="multimedia/logo-turnera.png" alt="logo_turnera" class="footer-logo">
             </div>

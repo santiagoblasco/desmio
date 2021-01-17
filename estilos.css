@@ -395,9 +395,10 @@ tr td{
 	justify-items: center;
 }
 
-.terminos{
-	font-size: smaller;
-	align-self: center;
+.form-label{
+	font-size: smaller !important;
+	align-items: center;
+	align-content: center;
 }
 
 @media (max-width: 991px) {
@@ -408,4 +409,32 @@ tr td{
 	.showcase-title{
 		margin-bottom: 2vh;
 	}
+}
+
+.carousel-inner{
+	width: 1920px !important;
+}
+
+.form-signin{
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+}
+
+.form-signin .form-control{
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus{
+	z-index: 2;
+}
+
+select{
+	appearance: menulist !important;
+	color: rgb(59, 59, 59) !important;
 }

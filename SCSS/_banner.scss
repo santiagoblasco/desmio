@@ -1,0 +1,41 @@
+@import "colors";
+
+.banner{
+	background-color: $primary;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+
+	&__item{
+		border: 2px solid white;
+		margin: 5px;
+		background: none;
+		border-radius: 5px;
+		color: white;
+		padding: 2%;
+	
+		&--email{
+			width: 20vw;
+			text-decoration: none;
+			font-size: small;
+	
+			&::placeholder{
+				color: white;
+			}
+		
+			&:focus{
+				outline:none;
+			}
+		}
+	
+		&--submit:hover{
+			box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.25);
+		}
+	}
+}
+
+.fw-bold{
+	font-weight: 600 !important;
+}

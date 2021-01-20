@@ -1,0 +1,119 @@
+@import "colors";
+
+.planes{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__list{
+		text-align: left;
+		list-style-type: none;
+	
+		img{
+			height: 25px;
+			align-self: center;
+			margin-right: 10px;
+			margin-left: -15px;
+		}
+	
+		li{
+			animation: none !important;
+		}
+	}
+}
+
+.unlisted{
+	display: none;
+}
+
+.card{
+	&-header{
+		background-color:$primary;
+		color: white;
+	
+		h4{
+			font-size: large;
+		}
+	}
+
+	&-button{
+		color: white;
+		text-decoration: none;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 5px;
+		background-color: $accent;
+		border: 2px solid $accent-dark;
+		font-size: medium;
+		width: 70%;
+	
+		&:hover{
+			animation: pulse 1s;
+			box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.25);
+			color: white !important;
+		}
+	}
+
+	.simpleButton{
+		background: none;
+		border: none; 
+		text-decoration: underline;
+		margin-top: 3%;
+		font-size: small;
+		display: inline-block;
+	
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.table-hover tbody tr:hover td {
+    background: #e6ffff;
+}
+
+.table{
+	
+	th{
+		border: 1px;
+		background-color: $primary !important;
+		color: white;
+		font-weight: 400;
+		text-justify: center;
+	}
+
+	td{
+		border: 1px solid grey;
+		width:15% !important;
+		text-align: center;
+	}
+
+	.leftCell{
+		text-align: left;
+		border: 1px solid grey !important;
+		width: 30% !important;
+	}
+
+	.blankCell{
+		border: 1px;
+		color: white;
+		font-weight: 400;
+		background: none !important;
+	}
+
+	&__button{
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		border-radius: 5px;
+		background-color: $primary;
+		border: 2px solid $dark;
+
+		&:hover{
+			animation: pulse 1s;
+			box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.25);
+		}
+	}
+}

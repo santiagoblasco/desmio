@@ -1,0 +1,71 @@
+@import "colors";
+
+.userForm{
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+	border: 1px grey solid;
+	border-radius: 5px;
+
+	&__item{
+		padding: 10px;
+		margin-top: 2%;
+		margin-bottom: 2%;
+
+		&:focus{
+			z-index: 2;
+		}
+	}
+
+	&__label{
+		font-size: smaller !important;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 10px;
+	}
+}
+
+.commonForm{
+	border: 1px grey solid;
+	border-radius: 5px;
+	padding: 10px;
+	
+	input, textarea{
+		padding: 5px 5px 5px 5px;
+		margin-top: 1%;
+		margin-bottom: 1%;
+
+		&:focus{
+			outline:none;
+			border: $dark 2px solid;
+			border-radius: 5px;
+		}
+	}
+}
+
+.form-button{
+	color: white;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	background-color: $primary;
+	border: 2px solid $dark;
+	display: block;
+	align-self: center;
+	align-content: center;
+	justify-items: center;
+
+	&:hover{
+		color: white;
+		animation: pulse 1s;
+	}
+}
+
+select{
+	appearance: menulist !important;
+	color: rgb(59, 59, 59) !important;
+}

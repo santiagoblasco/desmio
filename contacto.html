@@ -7,7 +7,7 @@
     <title>Turnera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="./css/master.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -17,11 +17,11 @@
 
 <body>
     <header class="sticky-top">
-        <nav class="navbar nav navbar-expand-lg navbar-dark bg-dark header-space">
+        <nav class="navbar navbar-expand-lg navbar-dark header-space">
             <div class="container-fluid">
-                <div class="nav-logo">
+                <div class="navbar__logo">
                     <a href="index.html">
-                        <img src="multimedia/logo-turnera.png" alt="logo_turnera" class="nav-logo-img">
+                        <img src="multimedia/logo-turnera.png" alt="logo_turnera" class="navbar__logo__img">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,27 +31,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-2" aria-current="page"
-                                href="index.html">Inicio</a>
+                        <li class="navbar__item">
+                            <a class="navbar__item__text nav-link ps-2 pe-2 " aria-current="page" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-2" href="como-funciona.html">¿Cómo funciona?</a>
+                        <li class="navbar__item">
+                            <a class="navbar__item__text nav-link ps-2 pe-2" href="como-funciona.html">¿Cómo funciona?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-2" href="precios.html">Precios</a>
+                        <li class="navbar__item">
+                            <a class="navbar__item__text nav-link ps-2 pe-2" href="precios.html">Precios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ps-2 pe-2 active" href="contacto.html">Contacto</a>
+                        <li class="navbar__item">
+                            <a class="navbar__item__text navbar__item__text--activo nav-link ps-2 pe-2" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav nav-pills mb-2 mb-lg-0 me-5 navbar-right menu users">
-                        <li class="nav-item button-users">
-                            <a class="nav-link ps-2 pe-2" aria-current="page"
-                                href="registro.html">Registrarme gratis</a>
+                        <li class="navbar__item buttonUsers">
+                            <a class="navbar__item__text nav-link ps-2 pe-2" aria-current="page" href="registro.html">Registrarme
+                                gratis</a>
                         </li>
-                        <li class="nav-item button-users">
-                            <a class="nav-link ps-2 pe-2" href="login.html">Iniciar
+                        <li class="navbar__item buttonUsers">
+                            <a class="navbar__item__text nav-link ps-2 pe-2" href="login.html">Iniciar
                                 sesión</a>
                         </li>
                     </ul>
@@ -64,20 +63,22 @@
             <h2 class="mb-4">Contacto</h2>
             <div class="row justify-content-center w-100">
                 <div class="col-9 col-md-6 col-lg-4">
-                    <div class="form-box mb-3"><p class="fw-bold d-inline-block mb-0 me-1">Atención comercial:</p><p class="d-inline-block mb-0">(11) 3883 3313</p></div>
-                    <div class="form-box">
+                    <div class="commonForm mb-3">
+                        <p class="fw-bold d-inline-block mb-0 me-1">Atención comercial:</p>
+                        <p class="d-inline-block mb-0">(11) 3883 3313</p>
+                    </div>
+                    <div class="commonForm">
                         <p class="fw-bold">Escribinos un email</p>
                         <form class="form m-3">
                             <div class="row">
-                                <input type="text" name="nombre" placeholder="Nombre" class="form-item col-8">
+                                <input type="text" name="nombre" placeholder="Nombre" class="col-8">
                             </div>
                             <div class="row">
                                 <input type="email" name="correo-electronico" placeholder="Correo electrónico"
-                                    class="form-item col-8">
+                                    class="col-8">
                             </div>
                             <div class="row">
-                                <textarea name="consulta" placeholder="Escribinos tu consulta"
-                                    class="form-item"></textarea>
+                                <textarea name="consulta" placeholder="Escribinos tu consulta"></textarea>
                             </div>
                             <div class="row justify-content-center">
                                 <input type="submit" name="Enviar" class="col-4 form-button mt-4">
@@ -93,21 +94,22 @@
             <div class="col-6 col-lg-3 mx-auto">
                 <img src="multimedia/logo-turnera.png" alt="logo_turnera" class="footer-logo">
             </div>
-            <div class="footer-text col-10 text-center text-lg-start col-lg-5 mx-auto mt-3">
+            <div class="col-10 text-center text-lg-start col-lg-5 mx-auto mt-3">
                 <p>(11) 3883 3313 | hola@turnera.com</p>
                 <p>Turnera S.A. | Caupolicán 1500 - Buenos Aires - Argentina</p>
                 <p>© 2021 - Todos los derechos reservados</p>
             </div>
             <div class="d-flex justify-content-center col-12 mt-2 mt-lg-0 col-lg-2 mx-auto">
-                <a href="https://www.facebook.com/turnera" class="footer-redes-a">
-                    <img src="multimedia/logo-facebook.png" alt="logo-facebook" class="footer-redes-icon"></a>
-                <a href="https://www.instagram.com/turnera" class="footer-redes-a">
-                    <img src="multimedia/logo-instagram.png" alt="logo-instagram" class="footer-redes-icon"></a>
-                <a href="https://www.linkedin.com/turnera" class="footer-redes-a">
-                    <img src="multimedia/logo-linkedin.png" alt="logo-linkedin" class="footer-redes-icon"></a>
+                <a href="https://www.facebook.com/turnera">
+                    <img src="multimedia/logo-facebook.png" alt="logo-facebook" class="footer__icon"></a>
+                <a href="https://www.instagram.com/turnera">
+                    <img src="multimedia/logo-instagram.png" alt="logo-instagram" class="footer__icon"></a>
+                <a href="https://www.linkedin.com/turnera">
+                    <img src="multimedia/logo-linkedin.png" alt="logo-linkedin" class="footer__icon"></a>
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
         crossorigin="anonymous"></script>

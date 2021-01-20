@@ -1,0 +1,30 @@
+@import "colors";
+
+.atributosBox{
+	padding: 3%;
+	margin: 1%;
+	background-color: #FFF;
+	border-style: solid;
+	border-color: $dark;
+	border-radius: 8px;
+	border-width: 2px;
+	display: grid;
+	box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.1);
+
+	&:hover{
+		box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.25);
+		animation: pulse 0.75s;
+	}
+
+	&__icon{
+		max-width: 25%;
+		justify-self: center;
+	}
+
+	&__title{
+		color:$primary;
+		justify-self: center;
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+}

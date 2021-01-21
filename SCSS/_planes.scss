@@ -1,4 +1,5 @@
 @import "colors";
+@import "form";
 
 .planes{
 	display: flex;
@@ -6,7 +7,7 @@
 	justify-content: center;
 
 	&__list{
-		text-align: left;
+		text-align: left; 
 		list-style-type: none;
 	
 		img{
@@ -27,9 +28,12 @@
 }
 
 .card{
+	background-color: $card-background;
+	border: 3px $border solid;
+
 	&-header{
 		background-color:$primary;
-		color: white;
+		color: white !important;
 	
 		h4{
 			font-size: large;
@@ -66,7 +70,7 @@
 	
 		@media (max-width: 991px) {
 			display: none;
-		}
+		} 
 	}
 }
 
@@ -103,17 +107,12 @@
 		background: none !important;
 	}
 
-	&__button{
-		color: white;
-		text-decoration: none;
-		padding: 10px;
-		border-radius: 5px;
-		background-color: $primary;
-		border: 2px solid $dark;
+	a{
+		text-decoration: none !important;
+	}
 
-		&:hover{
-			animation: pulse 1s;
-			box-shadow: 5px 5px 21px -2px rgba(0,0,0,0.25);
-		}
+	&__button{
+		@extend .formButton;
 	}
 }
+

@@ -1,8 +1,73 @@
-$primary: #2d9cc4;
-$secondary: #3282b8;
-$dark: #117397;
-$light: #bbe1fa;
-$text-light: #FFFFFF;
-$text-dark: #000000;
-$accent: #3ebb3a;
-$accent-dark: #119727;
+$theme: dark;
+
+$primary: null;
+$secondary: null;
+$dark: null;
+$light: null;
+$banner: null;
+$text-general: null;
+$text-contrast: null;
+$accent: null;
+$accent-dark: null;
+$background: null;
+$card-background: null;
+$testimonial-background: null;
+$border: null;
+$button-border: null;
+
+
+@if $theme == light {
+    $primary: #2d9cc4;
+    $secondary: #3282b8;
+    $dark: #117397;
+    $light: #bbe1fa;
+    $banner: #2d9cc4;
+    $text-general: #000000;
+    $text-contrast: #FFFFFF;
+    $accent: #3ebb3a;
+    $accent-dark: #119727;
+    $background: #FFFFFF;
+    $card-background: #FFFFFF;
+    $testimonial-background: #eef4f7;
+    $border: #2d9cc4;
+    $button-border: #117397;
+
+    h1, h2 {
+        color: black;
+    }
+
+    h3{
+        color: $primary;
+    }
+
+    h4{
+        color: white;
+    }
+}
+
+@else if $theme == dark{
+    $primary: #000000;
+    $secondary: #3282b8;
+    $dark: #117397;
+    $light: #bbe1fa;
+    $banner: #117397;
+    $text-general: #FFFFFF;
+    $text-contrast: #000;
+    $accent: #3ebb3a;
+    $accent-dark: #119727;
+    $background: #000000;
+    $card-background: #171717;
+    $testimonial-background: #171717;
+    $border: #117397;
+    $button-border: #FFFFFF;
+
+    p, li, button, label{
+        color: white !important;
+    }
+
+    h1, h2, h3, h4, h5{
+        color: white;
+    }
+}
+
+

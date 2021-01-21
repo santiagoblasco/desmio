@@ -1,3 +1,11 @@
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -8,21 +16,22 @@ body {
   padding: 0px;
   color: black;
   font-family: 'Montserrat', sans-serif;
+  background-color: #000000;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 0px) {
   body {
     margin-bottom: 85%;
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) {
   body {
     margin-bottom: 65%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   body {
     margin-bottom: 50%;
   }
@@ -62,10 +71,11 @@ img {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 h2 {
+  font-weight: bold;
   text-align: center;
   margin-bottom: 2%;
   margin-top: 2%;
@@ -76,8 +86,13 @@ h3 {
   font-size: 1.2rem;
 }
 
+input, textarea {
+  background: none;
+}
+
 .navbar {
-  background-color: #2d9cc4;
+  background-color: #000000;
+  border-bottom: solid white 1px;
 }
 
 @media (min-width: 992px) {
@@ -111,12 +126,13 @@ h3 {
 }
 
 .footer {
-  background-color: #2d9cc4;
+  background-color: #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
   color: white;
   font-size: 90%;
+  border-top: 1px solid white;
 }
 
 .footer__icon {
@@ -126,10 +142,18 @@ h3 {
   margin: 15px;
 }
 
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
 .atributosBox {
   padding: 3%;
   margin: 1%;
-  background-color: #FFF;
+  background-color: #171717;
   border-style: solid;
   border-color: #117397;
   border-radius: 8px;
@@ -154,11 +178,110 @@ h3 {
 }
 
 .atributosBox__title {
-  color: #2d9cc4;
   -ms-grid-column-align: center;
       justify-self: center;
   margin-bottom: 10%;
   margin-top: 10%;
+}
+
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+.userForm {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  border: 1px grey solid;
+  border-radius: 5px;
+}
+
+.userForm__item {
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: none;
+  color: #FFFFFF;
+}
+
+.userForm__item:focus {
+  z-index: 2;
+  background: none;
+  color: #FFFFFF;
+}
+
+.userForm__label {
+  font-size: smaller !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 10px;
+}
+
+.commonForm {
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.commonForm input, .commonForm textarea {
+  padding: 5px 5px 5px 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #FFFFFF;
+}
+
+.commonForm input:focus, .commonForm textarea:focus {
+  outline: none;
+  border: #117397 2px solid;
+  border-radius: 5px;
+}
+
+.formButton, .table__button {
+  color: white !important;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+.formButton:hover, .table__button:hover {
+  color: white;
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+}
+
+select {
+  -webkit-appearance: menulist !important;
+     -moz-appearance: menulist !important;
+          appearance: menulist !important;
+  color: #3b3b3b !important;
 }
 
 .planes {
@@ -197,9 +320,14 @@ h3 {
   display: none;
 }
 
+.card {
+  background-color: #171717;
+  border: 3px #117397 solid;
+}
+
 .card-header {
-  background-color: #2d9cc4;
-  color: white;
+  background-color: #000000;
+  color: white !important;
 }
 
 .card-header h4 {
@@ -249,7 +377,7 @@ h3 {
 
 .table th {
   border: 1px;
-  background-color: #2d9cc4 !important;
+  background-color: #000000 !important;
   color: white;
   font-weight: 400;
   text-justify: center;
@@ -274,24 +402,20 @@ h3 {
   background: none !important;
 }
 
-.table__button {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #2d9cc4;
-  border: 2px solid #117397;
+.table a {
+  text-decoration: none !important;
 }
 
-.table__button:hover {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  -webkit-box-shadow: 5px 5px 21px -2px rgba(0, 0, 0, 0.25);
-          box-shadow: 5px 5px 21px -2px rgba(0, 0, 0, 0.25);
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
 }
 
 .banner {
-  background-color: #2d9cc4;
+  background-color: #117397;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -343,6 +467,14 @@ h3 {
   font-weight: 600 !important;
 }
 
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
 .userForm {
   width: 100%;
   max-width: 330px;
@@ -356,10 +488,14 @@ h3 {
   padding: 10px;
   margin-top: 2%;
   margin-bottom: 2%;
+  background: none;
+  color: #FFFFFF;
 }
 
 .userForm__item:focus {
   z-index: 2;
+  background: none;
+  color: #FFFFFF;
 }
 
 .userForm__label {
@@ -382,6 +518,7 @@ h3 {
   padding: 5px 5px 5px 5px;
   margin-top: 1%;
   margin-bottom: 1%;
+  color: #FFFFFF;
 }
 
 .commonForm input:focus, .commonForm textarea:focus {
@@ -390,16 +527,16 @@ h3 {
   border-radius: 5px;
 }
 
-.form-button {
-  color: white;
+.formButton, .table__button {
+  color: white !important;
   text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 5px;
-  background-color: #2d9cc4;
-  border: 2px solid #117397;
+  background-color: #000000;
+  border: 2px solid #FFFFFF;
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -409,7 +546,7 @@ h3 {
   justify-items: center;
 }
 
-.form-button:hover {
+.formButton:hover, .table__button:hover {
   color: white;
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
@@ -420,6 +557,14 @@ select {
      -moz-appearance: menulist !important;
           appearance: menulist !important;
   color: #3b3b3b !important;
+}
+
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
 }
 
 .portadaTitulo {
@@ -449,9 +594,17 @@ select {
   width: 1920px !important;
 }
 
-.kickoff-item {
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+.kickoff__item {
   border: 2px solid #117397;
-  background-color: #2d9cc4;
+  background-color: #000000;
   border-radius: 10%;
   font-size: 25px;
   font-weight: 600;
@@ -460,6 +613,10 @@ select {
   height: 40px;
   text-align: center;
   margin-right: 15px;
+}
+
+.kickoff__p {
+  color: #FFFFFF;
 }
 
 @media (max-width: 991px) {
@@ -471,9 +628,16 @@ select {
   }
 }
 
+p, li, button, label {
+  color: white !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
 .testimonials-clean {
-  color: #313437;
-  background-color: #eef4f7;
+  background-color: #171717;
 }
 
 .testimonials-clean p {
@@ -484,11 +648,10 @@ select {
   font-weight: bold;
   margin-bottom: 20px;
   padding-top: 40px;
-  color: inherit;
 }
 
 @media (max-width: 767px) {
-  .testimonials-clean h2 {
+  .testimonials-clean h2 .testimonials-clean h2 {
     margin-bottom: 25px;
     padding-top: 25px;
     font-size: 24px;
@@ -545,7 +708,6 @@ select {
 .testimonials-clean .item .name {
   font-weight: bold;
   margin-bottom: 2px;
-  color: inherit;
 }
 
 .testimonials-clean .item .title {
@@ -556,6 +718,7 @@ select {
 .testimonials-clean .item .description {
   font-size: 15px;
   margin-bottom: 0;
+  color: black !important;
 }
 
 .testimonials-clean .item img {

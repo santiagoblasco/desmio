@@ -12,9 +12,13 @@
 		padding: 10px;
 		margin-top: 2%;
 		margin-bottom: 2%;
+		background: none;
+		color: $text-general;
 
 		&:focus{
 			z-index: 2;
+			background: none;
+			color: $text-general;
 		}
 	}
 
@@ -35,6 +39,7 @@
 		padding: 5px 5px 5px 5px;
 		margin-top: 1%;
 		margin-bottom: 1%;
+		color: $text-general;
 
 		&:focus{
 			outline:none;
@@ -44,8 +49,8 @@
 	}
 }
 
-.form-button{
-	color: white;
+.formButton{
+	color: white !important;
 	text-decoration: none;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -53,7 +58,7 @@
 	padding-right: 15px;
 	border-radius: 5px;
 	background-color: $primary;
-	border: 2px solid $dark;
+	border: 2px solid $button-border;
 	display: block;
 	align-self: center;
 	align-content: center;

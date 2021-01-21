@@ -3,7 +3,7 @@
 .atributosBox{
 	padding: 3%;
 	margin: 1%;
-	background-color: #FFF;
+	background-color: $card-background;
 	border-style: solid;
 	border-color: $dark;
 	border-radius: 8px;
@@ -22,7 +22,6 @@
 	}
 
 	&__title{
-		color:$primary;
 		justify-self: center;
 		margin-bottom: 10%;
 		margin-top: 10%;

@@ -1,8 +1,12 @@
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
@@ -16,7 +20,7 @@ body {
   padding: 0px;
   color: black;
   font-family: 'Montserrat', sans-serif;
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 0px) {
@@ -57,7 +61,7 @@ ul li:hover {
 }
 
 ul li a {
-  color: #FFFFFF;
+  color: #000000;
   padding: 10px;
   border-radius: 5px;
 }
@@ -91,7 +95,7 @@ input, textarea {
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: #2d9cc4;
   border-bottom: solid white 1px;
 }
 
@@ -126,7 +130,7 @@ input, textarea {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #2d9cc4;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -142,18 +146,22 @@ input, textarea {
   margin: 15px;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
 .atributosBox {
   padding: 3%;
   margin: 1%;
-  background-color: #171717;
+  background-color: #FFFFFF;
   border-style: solid;
   border-color: #117397;
   border-radius: 8px;
@@ -184,19 +192,27 @@ h1, h2, h3, h4, h5 {
   margin-top: 10%;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
@@ -214,13 +230,13 @@ h1, h2, h3, h4, h5 {
   margin-top: 2%;
   margin-bottom: 2%;
   background: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .userForm__item:focus {
   z-index: 2;
   background: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .userForm__label {
@@ -243,7 +259,7 @@ h1, h2, h3, h4, h5 {
   padding: 5px 5px 5px 5px;
   margin-top: 1%;
   margin-bottom: 1%;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .commonForm input:focus, .commonForm textarea:focus {
@@ -260,8 +276,8 @@ h1, h2, h3, h4, h5 {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 5px;
-  background-color: #000000;
-  border: 2px solid #FFFFFF;
+  background-color: #2d9cc4;
+  border: 2px solid #117397;
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -321,12 +337,12 @@ select {
 }
 
 .card {
-  background-color: #171717;
-  border: 3px #117397 solid;
+  background-color: #FFFFFF;
+  border: 3px #2d9cc4 solid;
 }
 
 .card-header {
-  background-color: #000000;
+  background-color: #2d9cc4;
   color: white !important;
 }
 
@@ -377,7 +393,7 @@ select {
 
 .table th {
   border: 1px;
-  background-color: #000000 !important;
+  background-color: #2d9cc4 !important;
   color: white;
   font-weight: 400;
   text-justify: center;
@@ -406,16 +422,20 @@ select {
   text-decoration: none !important;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
 .banner {
-  background-color: #117397;
+  background-color: #2d9cc4;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -467,11 +487,15 @@ h1, h2, h3, h4, h5 {
   font-weight: 600 !important;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
@@ -489,13 +513,13 @@ h1, h2, h3, h4, h5 {
   margin-top: 2%;
   margin-bottom: 2%;
   background: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .userForm__item:focus {
   z-index: 2;
   background: none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .userForm__label {
@@ -518,7 +542,7 @@ h1, h2, h3, h4, h5 {
   padding: 5px 5px 5px 5px;
   margin-top: 1%;
   margin-bottom: 1%;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .commonForm input:focus, .commonForm textarea:focus {
@@ -535,8 +559,8 @@ h1, h2, h3, h4, h5 {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 5px;
-  background-color: #000000;
-  border: 2px solid #FFFFFF;
+  background-color: #2d9cc4;
+  border: 2px solid #117397;
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -559,11 +583,15 @@ select {
   color: #3b3b3b !important;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
@@ -594,17 +622,21 @@ h1, h2, h3, h4, h5 {
   width: 1920px !important;
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
 .kickoff__item {
   border: 2px solid #117397;
-  background-color: #000000;
+  background-color: #2d9cc4;
   border-radius: 10%;
   font-size: 25px;
   font-weight: 600;
@@ -616,7 +648,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .kickoff__p {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 @media (max-width: 991px) {
@@ -628,16 +660,20 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-p, li, button, label {
-  color: white !important;
+h1, h2 {
+  color: black;
 }
 
-h1, h2, h3, h4, h5 {
+h3 {
+  color: #2d9cc4;
+}
+
+h4 {
   color: white;
 }
 
 .testimonials-clean {
-  background-color: #171717;
+  background-color: #eef4f7;
 }
 
 .testimonials-clean p {

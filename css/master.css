@@ -76,6 +76,10 @@ img {
 
 h1 {
   font-weight: bold;
+  font-size: xx-large !important;
+  display: inline-block;
+  -ms-grid-column-align: center !important;
+      justify-self: center !important;
 }
 
 h2 {

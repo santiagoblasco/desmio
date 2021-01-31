@@ -70,6 +70,20 @@ ul li a:hover {
   background-color: rgba(195, 229, 240, 0.5);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
 img {
   max-width: 100%;
 }
@@ -656,7 +670,7 @@ h4 {
 }
 
 @media (max-width: 991px) {
-  .turnera-pc {
+  .desmio-pc {
     display: none;
   }
   .showcase-title {
